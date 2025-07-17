@@ -1,4 +1,4 @@
-﻿namespace Sistema_de_alumno
+﻿namespace Sistema_Educativos
 {
     partial class AreaCalificacion
     {
@@ -198,7 +198,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(912, 560);
+            this.ClientSize = new System.Drawing.Size(932, 591);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtC1);

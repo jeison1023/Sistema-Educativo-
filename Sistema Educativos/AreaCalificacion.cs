@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using practica;
 
-namespace Sistema_de_alumno
+namespace Sistema_Educativos
 {
     public partial class AreaCalificacion : Form
     {
