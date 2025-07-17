@@ -138,14 +138,15 @@
             this.guardarComoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pDFToolStripMenuItem});
             this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
-            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
+            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.guardarComoToolStripMenuItem.Text = "Guardar como";
             // 
             // pDFToolStripMenuItem
             // 
             this.pDFToolStripMenuItem.Name = "pDFToolStripMenuItem";
-            this.pDFToolStripMenuItem.Size = new System.Drawing.Size(146, 34);
+            this.pDFToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.pDFToolStripMenuItem.Text = "PDF";
+            this.pDFToolStripMenuItem.Click += new System.EventHandler(this.pDFToolStripMenuItem_Click);
             // 
             // exportarToolStripMenuItem
             // 
