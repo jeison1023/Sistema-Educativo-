@@ -14,7 +14,7 @@ namespace Sistema_Educativos
     public partial class FormAlumnos : Form
     {
         // Lista estática para almacenar los alumnos, accesible desde otros formularios.
-        // En una aplicación real, esto sería una base de datos o un servicio de datos.
+       
         public static List<Alumno> ListaAlumnos = new List<Alumno>();
         public FormAlumnos()
         {
@@ -25,7 +25,7 @@ namespace Sistema_Educativos
         // Método para configurar las columnas del DataGridView1.
         private void ConfigurarDataGridViewAlumnos()
         {
-            // Se asume que tienes un DataGridView llamado 'dataGridView1' en tu formulario.
+            
             dataGridView1.AutoGenerateColumns = false; // Desactiva la generación automática de columnas.
 
             // Añade las columnas manualmente.
@@ -44,7 +44,7 @@ namespace Sistema_Educativos
         // Método para cargar la lista de alumnos en el DataGridView1.
         public void CargarAlumnosDataGridView()
         {
-            // Asigna la lista de alumnos como fuente de datos para el DataGridView.
+           
             dataGridView1.DataSource = null; // Limpia la fuente de datos actual.
             dataGridView1.DataSource = ListaAlumnos; // Asigna la nueva fuente de datos.
             dataGridView1.Refresh(); // Refresca el DataGridView para mostrar los cambios.

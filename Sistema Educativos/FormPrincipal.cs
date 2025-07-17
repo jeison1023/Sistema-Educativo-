@@ -12,8 +12,7 @@ namespace Sistema_Educativos
 {
     public partial class FormPrincipal : Form
     {
-        private int childFormNumber = 0;
-
+       
         public FormPrincipal()
         {
             InitializeComponent();
@@ -28,6 +27,13 @@ namespace Sistema_Educativos
         private void nuevoAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormAlumnos frm = new FormAlumnos();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void eliminarAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormEliminarAlumno frm = new FormEliminarAlumno();
             frm.MdiParent = this;
             frm.Show();
         }

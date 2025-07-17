@@ -118,8 +118,9 @@
             // eliminarAlumnoToolStripMenuItem
             // 
             this.eliminarAlumnoToolStripMenuItem.Name = "eliminarAlumnoToolStripMenuItem";
-            this.eliminarAlumnoToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.eliminarAlumnoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.eliminarAlumnoToolStripMenuItem.Text = "Eliminar alumno";
+            this.eliminarAlumnoToolStripMenuItem.Click += new System.EventHandler(this.eliminarAlumnoToolStripMenuItem_Click);
             // 
             // guardarToolStripMenuItem
             // 
