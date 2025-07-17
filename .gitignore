@@ -1,0 +1,117 @@
+#-------------------#
+# Archivos de Visual Studio
+#-------------------#
+
+# Archivos de la solución
+*.sln.ide
+*.suo
+*.user
+*.vssscc
+
+# Directorios de compilación
+[Dd]ebug/
+[Rr]elease/
+[Aa]rm64/
+[Aa]rm/
+[xX]64/
+[xX86]/
+[Bb]in/
+[Oo]bj/
+
+# Archivos de la base de datos de la solución
+*.sdf
+*.vshost.*
+*.VC.db
+*.pdb
+*.aps
+*.ncb
+*.idb
+*.opensdf
+
+# Archivos de compilación intermedios
+*.aps
+*.pch
+*.pco
+*.res
+*.resw
+*.cache
+*.obj
+*.sbr
+*.tlb
+*.tlh
+*.tmp
+
+# Visual Studio Code
+.vscode/
+
+# Paquetes de NuGet y dependencias
+*.nupkg
+*.nuspec
+# Directorio de paquetes de NuGet global (si lo tienes configurado)
+!/.nuget/
+
+# Archivos de usuario y configuración del IDE
+*.vs/
+*.vsp
+*.vspx
+*.vspscc
+
+# Web
+*.min.js
+*.min.css
+*.min.map
+
+# Test
+TestResults/
+*.trx
+*.coverage
+*.coverage.net
+
+# Directorios del sistema operativo (Windows, macOS)
+[Tt]humbs.db
+.DS_Store
+
+# Archivos de Rider (IDE de JetBrains)
+.idea/
+
+# Archivos de CodeLens
+*.xml.codelense
+
+# Archivos de IntelliSense y ayuda
+*.lib
+*.exp
+*.ilk
+
+# Archivos de Visual Studio Team Services
+*.vspscc
+
+# Logs de compilación
+*.log
+
+#-------------------#
+# Archivos específicos de C#
+#-------------------#
+
+# Paquetes NuGet restaurados
+*.deps.json
+*.runtimeconfig.json
+
+# Archivos de proyecto
+*.csproj.user
+*.vcxproj.filters
+*.vcxproj.user
+*.vcsproj.filters
+*.vcsproj.user
+
+# Referencias
+*/bin/
+*/obj/
+*/[Dd]ebug/
+*/[Rr]elease/
+
+# Archivos de usuario específicos de la solución
+*/.vs/
+
+# Directorios de publicación
+*/[Pp]ublish/
+*/[Pp]ublished/
