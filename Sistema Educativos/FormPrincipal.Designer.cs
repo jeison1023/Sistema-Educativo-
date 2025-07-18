@@ -144,7 +144,7 @@
             // pDFToolStripMenuItem
             // 
             this.pDFToolStripMenuItem.Name = "pDFToolStripMenuItem";
-            this.pDFToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.pDFToolStripMenuItem.Size = new System.Drawing.Size(146, 34);
             this.pDFToolStripMenuItem.Text = "PDF";
             this.pDFToolStripMenuItem.Click += new System.EventHandler(this.pDFToolStripMenuItem_Click);
             // 
@@ -153,14 +153,15 @@
             this.exportarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cToolStripMenuItem});
             this.exportarToolStripMenuItem.Name = "exportarToolStripMenuItem";
-            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
+            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.exportarToolStripMenuItem.Text = "Exportar";
             // 
             // cToolStripMenuItem
             // 
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(146, 34);
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.cToolStripMenuItem.Text = "CSV";
+            this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 

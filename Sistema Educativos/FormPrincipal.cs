@@ -39,6 +39,56 @@ namespace Sistema_Educativos
             frm.Show();
         }
 
+        private void ExportarDataGridViewACsv(DataGridView dgv, string tipo)
+        {
+            if (dgv == null)
+            {
+                MessageBox.Show("No se encontró un DataGridView en el formulario activo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Archivo CSV (.csv)|.csv";
+            saveFileDialog.FileName = $"{tipo}exportado{DateTime.Now:yyyyMMdd_HHmmss}.csv";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                StringBuilder sb = new StringBuilder();
+
+                //  Cabecera personalizada
+                sb.AppendLine("Archivo generado por el Sistema de Gestión de Alumnos");
+                sb.AppendLine($"Tipo de datos exportados: {tipo}");
+                sb.AppendLine($"Fecha de exportación: {DateTime.Now:dddd, dd MMMM yyyy - HH:mm:ss}");
+                sb.AppendLine(); // línea vacía
+
+                //  Encabezados
+                for (int i = 0; i < dgv.Columns.Count; i++)
+                {
+                    sb.Append(dgv.Columns[i].HeaderText);
+                    if (i < dgv.Columns.Count - 1) sb.Append(",");
+                }
+                sb.AppendLine();
+
+                //  Filas
+                foreach (DataGridViewRow fila in dgv.Rows)
+                {
+                    if (!fila.IsNewRow)
+                    {
+                        for (int i = 0; i < dgv.Columns.Count; i++)
+                        {
+                            var celda = fila.Cells[i].Value?.ToString().Replace(",", "");
+                            sb.Append(celda);
+                            if (i < dgv.Columns.Count - 1) sb.Append(",");
+                        }
+                        sb.AppendLine();
+                    }
+                }
+
+                File.WriteAllText(saveFileDialog.FileName, sb.ToString(), Encoding.UTF8);
+                MessageBox.Show("Exportación completada con éxito.", "¡Éxito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
            
@@ -186,6 +236,33 @@ namespace Sistema_Educativos
                     }
                 }
             }
+
+
+        }
+    }
+
+        private void cToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        {
+            // Exportar el DataGridView del formulario activo a un archivo CSV
+            {
+                Form activeForm = this.ActiveMdiChild;
+
+                if (activeForm is FormAlumnos formAlumnos)
+                {
+                    ExportarDataGridViewACsv(formAlumnos.Controls.OfType<DataGridView>().FirstOrDefault(), "Alumnos");
+                }
+                else if (activeForm is AreaCalificacion Calificaciones)
+                {
+                    ExportarDataGridViewACsv(Calificaciones.Controls.OfType<DataGridView>().FirstOrDefault(), "Calificaciones");
+                }
+                else
+                {
+                    MessageBox.Show("No hay un formulario válido activo para exportar.", "Exportación no disponible", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+
 
 
         }
