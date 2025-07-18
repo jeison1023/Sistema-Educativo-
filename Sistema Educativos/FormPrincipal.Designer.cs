@@ -51,7 +51,7 @@
             // 
             claficacionToolStripMenuItem.Name = "claficacionToolStripMenuItem";
             claficacionToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            claficacionToolStripMenuItem.Text = "🟩 Calificacion ";
+            claficacionToolStripMenuItem.Text = "🟩 calificación";
             claficacionToolStripMenuItem.Click += new System.EventHandler(this.claficacionToolStripMenuItem_Click);
             // 
             // menuStrip1
@@ -187,6 +187,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormPrincipal";
             this.Text = "FormPrincipal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
