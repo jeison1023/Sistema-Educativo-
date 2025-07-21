@@ -63,6 +63,16 @@ namespace Sistema_Educativos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _20250721_185652 {
+            get {
+                object obj = ResourceManager.GetObject("20250721_185652", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imagen {
             get {
                 object obj = ResourceManager.GetObject("imagen", resourceCulture);

@@ -98,7 +98,7 @@ namespace Sistema_Educativos
 
         }
         // Método para actualizar datos de un alumno según matrícula
-        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ActualizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string matricula = txtmatricula.Text.Trim();
 

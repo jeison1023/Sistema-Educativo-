@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Sistema_Educativos
 {
     public partial class FormPrincipal : Form
@@ -267,5 +268,28 @@ namespace Sistema_Educativos
 
         }
     }
+
+        private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Mostrar frm = new Mostrar();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void actualizarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+     
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
