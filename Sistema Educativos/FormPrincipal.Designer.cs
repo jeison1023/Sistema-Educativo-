@@ -70,7 +70,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1108, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(1108, 36);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -79,7 +79,7 @@
             // 
             this.mostrarToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
-            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(105, 28);
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(105, 32);
             this.mostrarToolStripMenuItem.Text = " Mostrar ";
             this.mostrarToolStripMenuItem.Click += new System.EventHandler(this.mostrarToolStripMenuItem_Click);
             // 
@@ -91,7 +91,7 @@
             this.crearToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.crearToolStripMenuItem.Image = global::Sistema_Educativos.Properties.Resources.crear_carpeta;
             this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
-            this.crearToolStripMenuItem.Size = new System.Drawing.Size(101, 28);
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(101, 32);
             this.crearToolStripMenuItem.Text = "Crear ";
             // 
             // nuevoAlumnoToolStripMenuItem
@@ -109,7 +109,7 @@
             this.actualizarToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actualizarToolStripMenuItem.Image = global::Sistema_Educativos.Properties.Resources.actualizar_pagina;
             this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
-            this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(134, 28);
+            this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(134, 32);
             this.actualizarToolStripMenuItem.Text = "Actualizar";
             // 
             // actualizarToolStripMenuItem1
@@ -126,7 +126,7 @@
             this.elimininarToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.elimininarToolStripMenuItem.Image = global::Sistema_Educativos.Properties.Resources.borrar;
             this.elimininarToolStripMenuItem.Name = "elimininarToolStripMenuItem";
-            this.elimininarToolStripMenuItem.Size = new System.Drawing.Size(122, 28);
+            this.elimininarToolStripMenuItem.Size = new System.Drawing.Size(122, 32);
             this.elimininarToolStripMenuItem.Text = "Eliminar ";
             // 
             // eliminarAlumnoToolStripMenuItem
@@ -144,7 +144,7 @@
             this.guardarToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guardarToolStripMenuItem.Image = global::Sistema_Educativos.Properties.Resources.disco_flexible;
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(118, 28);
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(118, 32);
             this.guardarToolStripMenuItem.Text = "Guardar";
             // 
             // guardarComoToolStripMenuItem
@@ -183,8 +183,9 @@
             // 
             this.salirToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.salirToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salirToolStripMenuItem.Image = global::Sistema_Educativos.Properties.Resources.cerrar_sesion;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(65, 28);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(85, 32);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
