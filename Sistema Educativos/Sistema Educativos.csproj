@@ -143,5 +143,29 @@
   <ItemGroup>
     <None Include="Resources\20250721_185652.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar-pagina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disco-flexible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crear-carpeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deberes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archivo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
