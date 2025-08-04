@@ -51,14 +51,13 @@
             // 
             claficacionToolStripMenuItem.Image = global::Sistema_Educativos.Properties.Resources.deberes;
             claficacionToolStripMenuItem.Name = "claficacionToolStripMenuItem";
-            claficacionToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            claficacionToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             claficacionToolStripMenuItem.Text = "🟩 calificación";
             claficacionToolStripMenuItem.Click += new System.EventHandler(this.claficacionToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.GhostWhite;
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mostrarToolStripMenuItem,
@@ -69,8 +68,8 @@
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1108, 36);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(739, 28);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -79,7 +78,7 @@
             // 
             this.mostrarToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
-            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(105, 32);
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
             this.mostrarToolStripMenuItem.Text = " Mostrar ";
             this.mostrarToolStripMenuItem.Click += new System.EventHandler(this.mostrarToolStripMenuItem_Click);
             // 
@@ -91,14 +90,14 @@
             this.crearToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.crearToolStripMenuItem.Image = global::Sistema_Educativos.Properties.Resources.crear_carpeta;
             this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
-            this.crearToolStripMenuItem.Size = new System.Drawing.Size(101, 32);
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.crearToolStripMenuItem.Text = "Crear ";
             // 
             // nuevoAlumnoToolStripMenuItem
             // 
             this.nuevoAlumnoToolStripMenuItem.Image = global::Sistema_Educativos.Properties.Resources.graduado;
             this.nuevoAlumnoToolStripMenuItem.Name = "nuevoAlumnoToolStripMenuItem";
-            this.nuevoAlumnoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.nuevoAlumnoToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.nuevoAlumnoToolStripMenuItem.Text = "🛑 Nuevo alumno";
             this.nuevoAlumnoToolStripMenuItem.Click += new System.EventHandler(this.nuevoAlumnoToolStripMenuItem_Click);
             // 
@@ -109,13 +108,13 @@
             this.actualizarToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actualizarToolStripMenuItem.Image = global::Sistema_Educativos.Properties.Resources.actualizar_pagina;
             this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
-            this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(134, 32);
+            this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
             this.actualizarToolStripMenuItem.Text = "Actualizar";
             // 
             // actualizarToolStripMenuItem1
             // 
             this.actualizarToolStripMenuItem1.Name = "actualizarToolStripMenuItem1";
-            this.actualizarToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.actualizarToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
             this.actualizarToolStripMenuItem1.Text = "⏳ Actualizar";
             this.actualizarToolStripMenuItem1.Click += new System.EventHandler(this.actualizarToolStripMenuItem1_Click);
             // 
@@ -126,13 +125,13 @@
             this.elimininarToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.elimininarToolStripMenuItem.Image = global::Sistema_Educativos.Properties.Resources.borrar;
             this.elimininarToolStripMenuItem.Name = "elimininarToolStripMenuItem";
-            this.elimininarToolStripMenuItem.Size = new System.Drawing.Size(122, 32);
+            this.elimininarToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
             this.elimininarToolStripMenuItem.Text = "Eliminar ";
             // 
             // eliminarAlumnoToolStripMenuItem
             // 
             this.eliminarAlumnoToolStripMenuItem.Name = "eliminarAlumnoToolStripMenuItem";
-            this.eliminarAlumnoToolStripMenuItem.Size = new System.Drawing.Size(273, 34);
+            this.eliminarAlumnoToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.eliminarAlumnoToolStripMenuItem.Text = "❌ Eliminar alumno";
             this.eliminarAlumnoToolStripMenuItem.Click += new System.EventHandler(this.eliminarAlumnoToolStripMenuItem_Click);
             // 
@@ -144,7 +143,7 @@
             this.guardarToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guardarToolStripMenuItem.Image = global::Sistema_Educativos.Properties.Resources.disco_flexible;
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(118, 32);
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.guardarToolStripMenuItem.Text = "Guardar";
             // 
             // guardarComoToolStripMenuItem
@@ -152,14 +151,14 @@
             this.guardarComoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pDFToolStripMenuItem});
             this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
-            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.guardarComoToolStripMenuItem.Text = "📁 Guardar como";
             // 
             // pDFToolStripMenuItem
             // 
             this.pDFToolStripMenuItem.Image = global::Sistema_Educativos.Properties.Resources.pdf;
             this.pDFToolStripMenuItem.Name = "pDFToolStripMenuItem";
-            this.pDFToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.pDFToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.pDFToolStripMenuItem.Text = "📌 PDF";
             this.pDFToolStripMenuItem.Click += new System.EventHandler(this.pDFToolStripMenuItem_Click);
             // 
@@ -168,14 +167,14 @@
             this.exportarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cToolStripMenuItem});
             this.exportarToolStripMenuItem.Name = "exportarToolStripMenuItem";
-            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.exportarToolStripMenuItem.Text = "📁  Exportar";
             // 
             // cToolStripMenuItem
             // 
             this.cToolStripMenuItem.Image = global::Sistema_Educativos.Properties.Resources.archivo;
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.cToolStripMenuItem.Text = "📍 CSV";
             this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
             // 
@@ -185,20 +184,19 @@
             this.salirToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salirToolStripMenuItem.Image = global::Sistema_Educativos.Properties.Resources.cerrar_sesion;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(85, 32);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Sistema_Educativos.Properties.Resources._20250721_185652;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1108, 804);
+            this.ClientSize = new System.Drawing.Size(739, 522);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormPrincipal";
             this.Text = "FormPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -7,25 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using practica;
+using practica; 
 
 namespace Sistema_Educativos
 {
-    public partial class FormAlumnos : Form
+   
+    public partial class FormAlumnos : Form, IRefrescable
     {
         // Lista estática para almacenar los alumnos, accesible desde otros formularios.
-       
+        // Asumiendo que 'practica.Alumno' es la clase que define la estructura del alumno.
         public static List<Alumno> ListaAlumnos = new List<Alumno>();
+
         public FormAlumnos()
         {
             InitializeComponent();
             ConfigurarDataGridViewAlumnos(); // Configura las columnas del DataGridView.
-            CargarAlumnosDataGridView(); // Carga los alumnos existentes al iniciar.
+            
         }
+
+        
+        public void RefrescarDatos()
+        {
+            
+            CargarAlumnosDataGridView();
+            MessageBox.Show(" Lista de alumnos actualizada.", "Refrescar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         // Método para configurar las columnas del DataGridView1.
         private void ConfigurarDataGridViewAlumnos()
         {
-            
             dataGridView1.AutoGenerateColumns = false; // Desactiva la generación automática de columnas.
 
             // Añade las columnas manualmente.
@@ -44,18 +54,25 @@ namespace Sistema_Educativos
         // Método para cargar la lista de alumnos en el DataGridView1.
         public void CargarAlumnosDataGridView()
         {
-           
             dataGridView1.DataSource = null; // Limpia la fuente de datos actual.
             dataGridView1.DataSource = ListaAlumnos; // Asigna la nueva fuente de datos.
-            dataGridView1.Refresh(); // Refresca el DataGridView para mostrar los cambios.
+            dataGridView1.Refresh(); // 
         }
+
+        private void FormAlumnos_Load(object sender, EventArgs e)
+        {
+            CargarAlumnosDataGridView();
+        }
+
         private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CargarAlumnosDataGridView();
-            MessageBox.Show("👀 Lista de alumnos actualizada en pantalla.", "Mostrar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(" Lista de alumnos actualizada en pantalla.", "Mostrar", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
         private void btnRegistrar_Click(object sender, EventArgs e)
-        { // Obtener los valores de los TextBox (se asume TextBox llamados txtMatricula, txtNombre, txtApellido, txtEdad).
+        {
+            // Obtener los valores de los TextBox (se asume TextBox llamados txtMatricula, txtNombre, txtApellido, txtEdad).
             string matricula = txtmatricula.Text.Trim();
             string nombre = txtnombre.Text.Trim();
             string apellido = txtapellido.Text.Trim();
@@ -95,8 +112,8 @@ namespace Sistema_Educativos
             txtnombre.Clear();
             txtapellido.Clear();
             txtedad.Clear();
-
         }
+
         // Método para actualizar datos de un alumno según matrícula
         private void ActualizarToolStripMenuItem_Click(object sender, EventArgs e)
         {

@@ -11,12 +11,24 @@ using practica;
 
 namespace Sistema_Educativos
 {
-    public partial class FormEliminarAlumno : Form
+   
+    public partial class FormEliminarAlumno : Form, IRefrescable
     {
         public FormEliminarAlumno()
         {
-            InitializeComponent(); ConfigurarDataGridViewAlumnoEncontrado();
+            InitializeComponent();
+            ConfigurarDataGridViewAlumnoEncontrado();
         }
+
+   
+        public void RefrescarDatos()
+        {
+           
+            dgvAlumnoEncontrado.DataSource = null;
+            txtMatriculaEliminar.Clear();
+            MessageBox.Show("🧹 Formulario de eliminación reseteado.", "Refrescar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         private void ConfigurarDataGridViewAlumnoEncontrado()
         {
             dgvAlumnoEncontrado.AutoGenerateColumns = false;
@@ -83,18 +95,18 @@ namespace Sistema_Educativos
                     txtMatriculaEliminar.Clear();
                     dgvAlumnoEncontrado.DataSource = null;
 
-
                     FormAlumnos formAlumnos = Application.OpenForms.OfType<FormAlumnos>().FirstOrDefault();
                     if (formAlumnos != null)
                     {
-                        formAlumnos.CargarAlumnosDataGridView();
+                        // Llama al método de la interfaz si el formulario existe
+                        ((IRefrescable)formAlumnos).RefrescarDatos();
                     }
-
 
                     AreaCalificacion formCalificacion = Application.OpenForms.OfType<AreaCalificacion>().FirstOrDefault();
                     if (formCalificacion != null)
                     {
-                        formCalificacion.CargarCalificacionesDataGridView();
+                        // Llama al método de la interfaz si el formulario existe
+                        ((IRefrescable)formCalificacion).RefrescarDatos();
                     }
                 }
                 else
@@ -132,6 +144,11 @@ namespace Sistema_Educativos
                 dgvAlumnoEncontrado.DataSource = null;
                 MessageBox.Show($"No se encontró ningún alumno con la matrícula '{matriculaBuscada}'.", "No Encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void FormEliminarAlumno_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

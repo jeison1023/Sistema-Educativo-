@@ -11,21 +11,31 @@ using practica;
 
 namespace Sistema_Educativos
 {
-    public partial class AreaCalificacion : Form
+   
+    public partial class AreaCalificacion : Form, IRefrescable
     {
         // Lista estática para almacenar las calificaciones.
         public static List<Calificacion> ListaCalificaciones = new List<Calificacion>();
+
         public AreaCalificacion()
         {
             InitializeComponent();
             ConfigurarDataGridViewCalificaciones(); // Configura las columnas del DataGridView.
-            CargarCalificacionesDataGridView(); // Carga las calificaciones existentes al iniciar.
+            
+        }
+
+       
+        public void RefrescarDatos()
+        {
+            
+            CargarCalificacionesDataGridView();
+            MessageBox.Show(" Lista de calificaciones actualizada.", "Refrescar", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         // Método para configurar las columnas del DataGridView2.
         private void ConfigurarDataGridViewCalificaciones()
         {
-            // Se asume que tienes un DataGridView llamado 'dataGridView2' 
+            // Se asume que tienes un DataGridView llamado 'dataGridView2'
             dataGridView2.AutoGenerateColumns = false; // Desactiva la generación automática de columnas.
 
             // Añade las columnas manualmente.
@@ -59,13 +69,13 @@ namespace Sistema_Educativos
             dataGridView2.Columns["Estado"].DataPropertyName = "Estado";
         }
 
-        // Método para cargar la lista de calificaciones en el DataGridView2.
+       
         public void CargarCalificacionesDataGridView()
         {
             // Asigna la lista de calificaciones como fuente de datos para el DataGridView.
             dataGridView2.DataSource = null; // Limpia la fuente de datos actual.
             dataGridView2.DataSource = ListaCalificaciones; // Asigna la nueva fuente de datos.
-            dataGridView2.Refresh(); // Refresca el DataGridView para mostrar los cambios.
+            dataGridView2.Refresh(); 
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -129,7 +139,16 @@ namespace Sistema_Educativos
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+        }
 
+        private void AreaCalificacion_Load(object sender, EventArgs e)
+        {
+            
+            CargarCalificacionesDataGridView();
         }
     }
-}
+
+}   
+
+

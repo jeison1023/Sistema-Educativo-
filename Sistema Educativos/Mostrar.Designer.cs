@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvMostrarDatos = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarDatos)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvMostrarDatos
+            // dataGridView1
             // 
-            this.dgvMostrarDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMostrarDatos.Location = new System.Drawing.Point(26, 12);
-            this.dgvMostrarDatos.Name = "dgvMostrarDatos";
-            this.dgvMostrarDatos.RowHeadersWidth = 51;
-            this.dgvMostrarDatos.RowTemplate.Height = 24;
-            this.dgvMostrarDatos.Size = new System.Drawing.Size(793, 532);
-            this.dgvMostrarDatos.TabIndex = 0;
-            this.dgvMostrarDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMostrarDatos_CellContentClick);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(65, 72);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(566, 392);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Mostrar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(854, 556);
-            this.Controls.Add(this.dgvMostrarDatos);
+            this.ClientSize = new System.Drawing.Size(709, 505);
+            this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Mostrar";
             this.Text = "Mostrar";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarDatos)).EndInit();
+            this.Load += new System.EventHandler(this.Mostrar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvMostrarDatos;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
