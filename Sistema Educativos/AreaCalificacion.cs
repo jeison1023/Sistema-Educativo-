@@ -24,7 +24,13 @@ namespace Sistema_Educativos
             
         }
 
-       
+
+        public DataGridView GridPublico => dataGridView2;
+
+
+
+ 
+
         public void RefrescarDatos()
         {
             

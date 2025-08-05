@@ -26,6 +26,9 @@ namespace Sistema_Educativos
             frm.Show();
         }
 
+        
+
+
         private void nuevoAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormAlumnos frm = new FormAlumnos();
@@ -33,12 +36,18 @@ namespace Sistema_Educativos
             frm.Show();
         }
 
+
+
         private void eliminarAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormEliminarAlumno frm = new FormEliminarAlumno();
             frm.MdiParent = this;
             frm.Show();
         }
+
+
+
+
 
         private void ExportarDataGridViewACsv(DataGridView dgv, string tipo)
         {
@@ -271,10 +280,13 @@ namespace Sistema_Educativos
 
         private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             Mostrar frm = new Mostrar();
             frm.MdiParent = this;
             frm.Show();
         }
+
+
 
         private void actualizarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
