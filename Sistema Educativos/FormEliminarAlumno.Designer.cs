@@ -58,12 +58,12 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.InfoText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvAlumnoEncontrado.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvAlumnoEncontrado.Location = new System.Drawing.Point(21, 150);
-            this.dgvAlumnoEncontrado.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dgvAlumnoEncontrado.Location = new System.Drawing.Point(32, 231);
+            this.dgvAlumnoEncontrado.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dgvAlumnoEncontrado.Name = "dgvAlumnoEncontrado";
             this.dgvAlumnoEncontrado.RowHeadersWidth = 51;
             this.dgvAlumnoEncontrado.RowTemplate.Height = 24;
-            this.dgvAlumnoEncontrado.Size = new System.Drawing.Size(544, 198);
+            this.dgvAlumnoEncontrado.Size = new System.Drawing.Size(816, 305);
             this.dgvAlumnoEncontrado.TabIndex = 9;
             // 
             // btnEliminar
@@ -72,10 +72,10 @@
             this.btnEliminar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Image = global::Sistema_Educativos.Properties.Resources.icons8_trash_can_48;
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(383, 71);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnEliminar.Location = new System.Drawing.Point(574, 109);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(183, 43);
+            this.btnEliminar.Size = new System.Drawing.Size(274, 66);
             this.btnEliminar.TabIndex = 8;
             this.btnEliminar.Text = "  Eliminar Alumno";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -88,10 +88,10 @@
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBuscar.Image = global::Sistema_Educativos.Properties.Resources.icons8_view_48;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(383, 16);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnBuscar.Location = new System.Drawing.Point(574, 25);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(183, 43);
+            this.btnBuscar.Size = new System.Drawing.Size(274, 66);
             this.btnBuscar.TabIndex = 7;
             this.btnBuscar.Text = "Buscar Alumno";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -100,11 +100,11 @@
             // txtMatriculaEliminar
             // 
             this.txtMatriculaEliminar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatriculaEliminar.Location = new System.Drawing.Point(196, 53);
-            this.txtMatriculaEliminar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtMatriculaEliminar.Location = new System.Drawing.Point(294, 82);
+            this.txtMatriculaEliminar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtMatriculaEliminar.Multiline = true;
             this.txtMatriculaEliminar.Name = "txtMatriculaEliminar";
-            this.txtMatriculaEliminar.Size = new System.Drawing.Size(141, 36);
+            this.txtMatriculaEliminar.Size = new System.Drawing.Size(210, 53);
             this.txtMatriculaEliminar.TabIndex = 6;
             // 
             // label1
@@ -112,26 +112,25 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 61);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(38, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 19);
+            this.label1.Size = new System.Drawing.Size(239, 26);
             this.label1.TabIndex = 5;
             this.label1.Text = "Matrícula del Alumno";
             // 
             // FormEliminarAlumno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Sistema_Educativos.Properties.Resources.imagen;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(600, 376);
+            this.ClientSize = new System.Drawing.Size(900, 578);
             this.Controls.Add(this.dgvAlumnoEncontrado);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtMatriculaEliminar);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "FormEliminarAlumno";
             this.Text = "FormEliminarAlumno";
             this.Load += new System.EventHandler(this.FormEliminarAlumno_Load);
