@@ -23,14 +23,6 @@ namespace Sistema_Educativos
             ConfigurarDataGridViewCalificaciones(); // Configura las columnas del DataGridView.
             
         }
-
-
-        public DataGridView GridPublico => dataGridView2;
-
-
-
- 
-
         public void RefrescarDatos()
         {
             
@@ -38,11 +30,10 @@ namespace Sistema_Educativos
             MessageBox.Show(" Lista de calificaciones actualizada.", "Refrescar", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        // Método para configurar las columnas del DataGridView2.
         private void ConfigurarDataGridViewCalificaciones()
         {
-            // Se asume que tienes un DataGridView llamado 'dataGridView2'
-            dataGridView2.AutoGenerateColumns = false; // Desactiva la generación automática de columnas.
+            
+            dataGridView2.AutoGenerateColumns = false; 
 
             // Añade las columnas manualmente.
             dataGridView2.Columns.Add("MatriculaAlumno", "Matrícula");

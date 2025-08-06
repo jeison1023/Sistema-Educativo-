@@ -290,13 +290,12 @@ namespace Sistema_Educativos
 
         private void actualizarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            // Itera sobre todos los formularios que están abiertos en la aplicación
+            
             foreach (Form form in Application.OpenForms)
             {
-                // Verifica si el formulario implementa la interfaz IRefrescable
+               
                 if (form is IRefrescable refrescableForm)
                 {
-                    // Llama al método RefrescarDatos() del formulario
                     refrescableForm.RefrescarDatos();
                 }
             }

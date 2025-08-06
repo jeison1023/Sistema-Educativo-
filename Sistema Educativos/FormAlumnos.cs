@@ -14,8 +14,7 @@ namespace Sistema_Educativos
    
     public partial class FormAlumnos : Form, IRefrescable
     {
-        // Lista estática para almacenar los alumnos, accesible desde otros formularios.
-        // Asumiendo que 'practica.Alumno' es la clase que define la estructura del alumno.
+        
         public static List<Alumno> ListaAlumnos = new List<Alumno>();
 
         public FormAlumnos()
@@ -33,25 +32,25 @@ namespace Sistema_Educativos
             MessageBox.Show(" Lista de alumnos actualizada.", "Refrescar", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        // Método para configurar las columnas del DataGridView1.
+    
         private void ConfigurarDataGridViewAlumnos()
         {
-            dataGridView1.AutoGenerateColumns = false; // Desactiva la generación automática de columnas.
+            dataGridView1.AutoGenerateColumns = false; 
 
-            // Añade las columnas manualmente.
+           
             dataGridView1.Columns.Add("Matricula", "Matrícula");
             dataGridView1.Columns.Add("Nombre", "Nombre");
             dataGridView1.Columns.Add("Apellido", "Apellido");
             dataGridView1.Columns.Add("Edad", "Edad");
 
-            // Asigna las propiedades de datos a las columnas.
+           
             dataGridView1.Columns["Matricula"].DataPropertyName = "Matricula";
             dataGridView1.Columns["Nombre"].DataPropertyName = "Nombre";
             dataGridView1.Columns["Apellido"].DataPropertyName = "Apellido";
             dataGridView1.Columns["Edad"].DataPropertyName = "Edad";
         }
 
-        // Método para cargar la lista de alumnos en el DataGridView1.
+        
         public void CargarAlumnosDataGridView()
         {
             dataGridView1.DataSource = null; // Limpia la fuente de datos actual.
@@ -196,6 +195,11 @@ namespace Sistema_Educativos
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormAlumnos_Load_1(object sender, EventArgs e)
         {
 
         }

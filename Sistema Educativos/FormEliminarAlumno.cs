@@ -11,8 +11,9 @@ using practica;
 
 namespace Sistema_Educativos
 {
+ 
    
-    public partial class FormEliminarAlumno : Form, IRefrescable
+    public partial class FormEliminarAlumno : Form
     {
         public FormEliminarAlumno()
         {
@@ -20,14 +21,6 @@ namespace Sistema_Educativos
             ConfigurarDataGridViewAlumnoEncontrado();
         }
 
-   
-        public void RefrescarDatos()
-        {
-           
-            dgvAlumnoEncontrado.DataSource = null;
-            txtMatriculaEliminar.Clear();
-            MessageBox.Show("🧹 Formulario de eliminación reseteado.", "Refrescar", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
 
         private void ConfigurarDataGridViewAlumnoEncontrado()
         {
@@ -98,14 +91,14 @@ namespace Sistema_Educativos
                     FormAlumnos formAlumnos = Application.OpenForms.OfType<FormAlumnos>().FirstOrDefault();
                     if (formAlumnos != null)
                     {
-                        // Llama al método de la interfaz si el formulario existe
+                       
                         ((IRefrescable)formAlumnos).RefrescarDatos();
                     }
 
                     AreaCalificacion formCalificacion = Application.OpenForms.OfType<AreaCalificacion>().FirstOrDefault();
                     if (formCalificacion != null)
                     {
-                        // Llama al método de la interfaz si el formulario existe
+                        
                         ((IRefrescable)formCalificacion).RefrescarDatos();
                     }
                 }
